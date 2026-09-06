@@ -5,11 +5,11 @@
 
 site_name: 我的知识库 Wiki
 site_description: 基于 Markdown 的分类 / 标签知识库，部署于 GitHub Pages
-site_url: https://evener920.github.io/wikis/
+site_url: https://evener920.github.io/docs/
 
 # 仓库信息（用于右上角编辑/查看源码按钮）
-repo_url: https://github.com/evener920/wikis
-repo_name: wikis
+repo_url: https://github.com/evener920/docs
+repo_name: docs
 edit_uri: edit/main/docs/
 
 theme:
