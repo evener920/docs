@@ -1,0 +1,30 @@
+name: 部署 Wiki 到 GitHub Pages
+
+on:
+  push:
+    branches:
+      - main          # 默认分支是 main，push 到 main 即自动部署
+  workflow_dispatch:   # 允许在 GitHub 网页手动触发
+
+permissions:
+  contents: write     # mkdocs gh-deploy 需要写权限来推送 gh-pages 分支
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 构建并部署到 gh-pages
+        run: mkdocs gh-deploy --force --verbose

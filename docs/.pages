@@ -1,0 +1,9 @@
+# 根目录导航排序（arrange 决定侧边栏顺序，collapse 控制是否折叠）
+arrange:
+  - index.md
+  - research-notes
+  - reading-notes
+  - project-docs
+  - 诗词
+  - tags.md
+collapse: false
