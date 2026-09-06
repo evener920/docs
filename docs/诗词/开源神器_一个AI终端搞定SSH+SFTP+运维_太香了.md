@@ -1,5 +1,6 @@
 ---
 title: 开源神器_一个AI终端搞定SSH+SFTP+运维_太香了
+tags: [github, 技术, 网络, wiki]
 category: article
 url: https://mp.weixin.qq.com/s?__biz=MzU2MTI4MjI0MQ==&mid=2247543795&idx=1&sn=75f23015277cae1b046d394370db6b21&chksm=fd47afa850e019fd281239825d91015751c7c3b1d70deb62193431b5fa9f5570e6323f1fffd8#rd
 origin: 微信
