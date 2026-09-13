@@ -1,0 +1,32 @@
+/**
+ * 自定义样式：页脚改为浅色（覆盖 Material 默认深色块）
+ * 浅灰底 + 深灰字 + indigo 链接，整体清爽
+ */
+:root {
+  --md-footer-bg-color: #f6f8fa;          /* 页脚浅灰底 */
+  --md-footer-bg-color--dark: #eaeef2;    /* 页脚上深一档（prev/next 区） */
+  --md-footer-fg-color: #586069;          /* 页脚正文深灰 */
+  --md-footer-fg-color--light: #6a737d;   /* 链接悬停 */
+  --md-footer-fg-color--muted: #959da5;   /* 弱化文字 */
+}
+
+/* 确保顶部分类导航区也跟随浅色 */
+.md-footer {
+  background-color: var(--md-footer-bg-color);
+  color: var(--md-footer-fg-color);
+}
+.md-footer-meta {
+  background-color: var(--md-footer-bg-color);
+}
+.md-footer a,
+.md-footer a:visited {
+  color: var(--md-footer-fg-color);
+}
+.md-footer a:hover {
+  color: var(--md-footer-fg-color--light);
+  text-decoration: underline;
+}
+.md-footer .md-footer__title,
+.md-footer .md-footer__direction {
+  color: var(--md-footer-fg-color);
+}

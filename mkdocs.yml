@@ -41,6 +41,10 @@ theme:
     - search.suggest          # 搜索联想
     - search.highlight        # 搜索结果高亮
 
+# 自定义样式（页脚浅色等）
+extra_css:
+  - stylesheets/extra.css
+
 # 插件：搜索 + 标签 + 自动导航
 plugins:
   - search
