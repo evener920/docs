@@ -12,6 +12,9 @@ repo_url: https://github.com/evener920/docs
 repo_name: docs
 edit_uri: edit/main/docs/
 
+# 页脚版权信息（避免页脚深色块空白）
+copyright: Copyright &copy; 2026 我的知识库 Wiki
+
 theme:
   name: material
   language: zh
