@@ -1,32 +1,49 @@
 /**
  * 自定义样式：页脚改为浅色（覆盖 Material 默认深色块）
  * 浅灰底 + 深灰字 + indigo 链接，整体清爽
+ * 使用 !important 强制覆盖，避免变量优先级问题
  */
-:root {
-  --md-footer-bg-color: #f6f8fa;          /* 页脚浅灰底 */
-  --md-footer-bg-color--dark: #eaeef2;    /* 页脚上深一档（prev/next 区） */
-  --md-footer-fg-color: #586069;          /* 页脚正文深灰 */
-  --md-footer-fg-color--light: #6a737d;   /* 链接悬停 */
-  --md-footer-fg-color--muted: #959da5;   /* 弱化文字 */
+
+/* 整个页脚容器 */
+.md-footer {
+  background-color: #f6f8fa !important;
+  color: #586069 !important;
 }
 
-/* 确保顶部分类导航区也跟随浅色 */
-.md-footer {
-  background-color: var(--md-footer-bg-color);
-  color: var(--md-footer-fg-color);
-}
+/* 页脚底部 meta 区（版权信息所在） */
 .md-footer-meta {
-  background-color: var(--md-footer-bg-color);
+  background-color: #f6f8fa !important;
+  color: #586069 !important;
 }
+
+/* 链接颜色 */
 .md-footer a,
-.md-footer a:visited {
-  color: var(--md-footer-fg-color);
+.md-footer a:visited,
+.md-footer-meta.md-typeset a,
+.md-footer-meta.md-typeset a:visited {
+  color: #3f51b5 !important;
 }
-.md-footer a:hover {
-  color: var(--md-footer-fg-color--light);
+
+.md-footer a:hover,
+.md-footer-meta.md-typeset a:hover,
+.md-footer-meta.md-typeset a:focus {
+  color: #303f9f !important;
   text-decoration: underline;
 }
+
+/* 上一篇/下一篇导航文字 */
 .md-footer .md-footer__title,
 .md-footer .md-footer__direction {
-  color: var(--md-footer-fg-color);
+  color: #586069 !important;
+}
+
+/* 版权文字 */
+.md-copyright,
+.md-copyright__highlight {
+  color: #6a737d !important;
+}
+
+/* 社交/按钮图标 */
+.md-footer .md-footer__button {
+  color: #586069 !important;
 }
